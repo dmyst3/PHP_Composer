@@ -14,6 +14,9 @@ jobs:
     - name: print hello
       run: echo hello ${{ inputs.name }}
     
+    - name: print repo
+      run: echo reponame ${{ GITHUB_REPOSITORY }}
+    
     - name: print path
       run: pwd
 
