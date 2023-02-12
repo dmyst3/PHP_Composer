@@ -16,3 +16,5 @@ jobs:
       run: pwd
     - name: display dir
       run: ls -la
+    - name: run python
+      run: python test.py
