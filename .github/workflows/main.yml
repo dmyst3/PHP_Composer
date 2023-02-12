@@ -32,3 +32,8 @@ jobs:
 
     - name: check php version
       run: php --version
+      
+    - name: execute shell script  
+      uses: dmyst3/INSTALL_PHP@main
+      with:
+        version: '8.1'
