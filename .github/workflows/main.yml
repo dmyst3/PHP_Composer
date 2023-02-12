@@ -6,6 +6,5 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/labeler@v4
     - name: print hello
       run: echo hello
