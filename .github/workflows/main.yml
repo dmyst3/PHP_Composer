@@ -8,3 +8,7 @@ jobs:
     steps:
     - name: print hello
       run: echo hello
+    - name: print path
+      run: echo pwd
+    - name: display dir
+      run: ls -la
