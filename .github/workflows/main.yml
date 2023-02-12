@@ -10,10 +10,13 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
+    
     - name: print hello
       run: echo hello ${{ inputs.name }}
+    
     - name: print path
       run: pwd
+
     - name: display dir
       run: ls -la
 
@@ -21,6 +24,7 @@ jobs:
       run: php --version
     
     - uses: shivammathur/setup-php@v2
+      if: php --version ! "7.4"
       with:
         php-version: '7.4'
         tools: pecl
