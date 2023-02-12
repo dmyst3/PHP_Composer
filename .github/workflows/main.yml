@@ -9,6 +9,6 @@ jobs:
     - name: print hello
       run: echo hello
     - name: print path
-      run: echo pwd
+      run: pwd
     - name: display dir
       run: ls -la
