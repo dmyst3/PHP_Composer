@@ -17,6 +17,9 @@ jobs:
     - name: print repo
       run: "echo reponame ${GITHUB_REPOSITORY}"
     
+    - name: print info
+      run: "echo ref ${GITHUB_REF}"
+    
     - name: print path
       run: pwd
 
