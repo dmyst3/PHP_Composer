@@ -28,20 +28,14 @@ jobs:
           echo "GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}"
           echo "GITHUB_SHA: ${GITHUB_SHA}"
           echo "GITHUB_REF: ${GITHUB_REF}"
-    
-    - name: print path
-      run: pwd
 
-    - name: display dir
-      run: ls -la
-
-    - name: check python version
-      run: python3 --version
+    - name: check php version
+      run: php --version
     
       
     - uses: dmyst3/INSTALL-PHP@main
       with:
         version: '8.1'
         
-    - name: check python version
-      run: python3 --version
+    - name: check php version
+      run: php --version
