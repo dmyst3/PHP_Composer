@@ -35,18 +35,13 @@ jobs:
     - name: display dir
       run: ls -la
 
-    - name: check php version
-      run: php --version
+    - name: check python version
+      run: python3 --version
     
-    - uses: shivammathur/setup-php@v2
-      with:
-        php-version: '7.4'
-        tools: pecl
-        extensions: swoole
-
-    - name: check php version
-      run: php --version
       
     - uses: dmyst3/INSTALL-PHP@main
       with:
         version: '8.1'
+        
+    - name: check python version
+      run: python3 --version
